@@ -16,7 +16,10 @@ public class Main  extends Application{
         //Init
         Application_run_time user = new Application_run_time();
         user.setPrimary_stage(primaryStage);
-
+        
+        // Icon
+        Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/files/Network-Angel.png")));
+        primaryStage.getIcons().add(icon);
 
         // Załaduj plik FXML z folderu resources
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/first_ui.fxml")));
