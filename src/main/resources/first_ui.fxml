@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.netit.Application_run_time"
+            xmlns="http://javafx.com/javafx/21">
+
+    <top>
+        <HBox fx:id="HBox_heder">
+            <Label fx:id="heder_inf" styleClass="less-important-text"/>
+        </HBox>
+    </top>
+
+    <bottom>
+        <HBox fx:id="HBox_footer">
+            <Label fx:id="footer_inf" styleClass="less-important-text"/>
+        </HBox>
+    </bottom>
+
+    <left>
+        <Accordion fx:id="accordion_left" styleClass="dark-panel">
+            <panes>
+
+                <!-- Sekcja: Systemy operacyjne -->
+                <TitledPane text="Systemy" animated="true" expanded="true">
+                    <content>
+                        <VBox spacing="10">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+                            <Button fx:id="linux_b" onAction="#add_linux" styleClass="image-button"/>
+                            <Button fx:id="windows_b" onAction="#add_windows" styleClass="image-button"/>
+                            <Button fx:id="linux_server_b" onAction="#add_linux_server" styleClass="image-button"/>
+                            <Button fx:id="windows_server_b" onAction="#add_windows_server" styleClass="image-button"/>
+                        </VBox>
+                    </content>
+                </TitledPane>
+
+                <!-- Sekcja: Urządzenia sieciowe -->
+                <TitledPane text="Urządzenia" animated="true">
+                    <content>
+                        <VBox spacing="10">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+                            <Button fx:id="ruter_b" onAction="#add_router" styleClass="image-button"/>
+                            <Button fx:id="switch_b" onAction="#add_switch" styleClass="image-button"/>
+                        </VBox>
+                    </content>
+                </TitledPane>
+
+                <!-- Sekcja: Tryb łączenia -->
+                <TitledPane text="Funkcje" animated="true">
+                    <content>
+                        <VBox spacing="5">
+                            <padding>
+                                <Insets top="10" right="10" bottom="10" left="10"/>
+                            </padding>
+                            <ToggleButton fx:id="connecter" onAction="#connecter_f" text="Łącz" styleClass="flat-button"/>
+                            <ToggleButton fx:id="disconecter" onAction="#connecter_d" text="Rozłącz" styleClass="flat-button"/>
+                            <Button fx:id="save" onAction="#save_to_file" text="save" styleClass="flat-button"/>
+                            <Button fx:id="load" text="load" styleClass="flat-button" onAction="#open_from_file"/>
+                            <Button fx:id="clean" text="clean" styleClass="flat-button" onAction="#clean_all_f"/>
+                            <Button fx:id="edytor" text="edytor" styleClass="flat-button" onAction="#open_edytor" />
+                            <Button fx:id="export_html" text="export nots" styleClass="flat-button" onAction="#export_nots" />
+                        </VBox>
+                    </content>
+                </TitledPane>
+
+            </panes>
+        </Accordion>
+    </left>
+
+
+
+    <center>
+        <Pane fx:id="workspace" styleClass="gray-background"/>
+    </center>
+
+</BorderPane>

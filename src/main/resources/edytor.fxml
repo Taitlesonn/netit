@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.netit.Edytor"
+            fx:id="e"
+            prefHeight="400.0" prefWidth="600.0"
+            styleClass="dark-panel">
+
+    <top>
+        <HBox fx:id="top_p">
+            <MenuButton text="Option">
+                <items>
+                    <MenuItem text="Add Image" fx:id="img_path_b" onAction="#add_image_to_text"/>
+                    <MenuItem text="Set Title" fx:id="tile_opt" onAction="#set_title"/>
+                    <MenuItem text="Change view" fx:id="podg" onAction="#podgld_f"/>
+                    <MenuItem text="Set device" fx:id="typer" onAction="#pokazOpcje"/>
+                    <MenuItem text="set style" fx:id="css_seter" onAction="#setter_of_css"/>
+                    <MenuItem text="load" fx:id="load_c" onAction="#setLoad_c"/>
+                </items>
+            </MenuButton>
+        </HBox>
+    </top>
+    <left>
+        <ScrollPane>
+            <VBox fx:id="left_scr"/>
+        </ScrollPane>
+    </left>
+</BorderPane>

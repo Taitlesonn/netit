@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.web.WebView?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10" alignment="CENTER"
+      style="-fx-padding: 20;"
+      styleClass="dark-panel">
+
+    <HBox fx:id="button_list" />
+    <WebView fx:id="idex_info"/>
+
+</VBox>

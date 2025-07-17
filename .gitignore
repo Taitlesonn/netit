@@ -1,0 +1,8 @@
+# Ignoruj katalogi
+rpm/
+lib/
+target/
+
+# Ignoruj konkretny plik ZIP
+netit.zip
+

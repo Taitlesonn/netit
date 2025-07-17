@@ -1,0 +1,102 @@
+.less-important-text {
+    -fx-font-size: 10px;
+    -fx-text-fill: #777; /* szary kolor, by podkreślić mniejsze znaczenie */
+}
+
+.image-button {
+    -fx-background-color: transparent;         /* brak tła przycisku */
+    -fx-padding: 0;                            /* usunięcie wewnętrznego marginesu */
+    -fx-border-color: transparent;            /* brak ramki */
+    -fx-background-radius: 0;                 /* brak zaokrągleń */
+    -fx-border-radius: 0;
+}
+
+.image-button > .graphic {
+    -fx-fit-to-width: true;
+    -fx-fit-to-height: true;
+    -fx-max-width: 200px;                     /* maksymalny rozmiar */
+    -fx-max-height: 200px;
+}
+.button.flat-button {
+    -fx-background-color: #e0e0e0; /* jasnoszary */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-padding: 5 10;
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-effect: none;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+
+.gray-background {
+    -fx-background-color: #d3d3d3; /* jasnoszary, ale nie za jasny */
+}
+
+.dark-panel {
+    -fx-background-color: #1e1e1e; /* ciemny grafit, nieco jaśniejszy niż #121212 */
+    -fx-padding: 10px;
+    -fx-border-color: #333333;     /* delikatna ramka, dla lepszego kontrastu */
+    -fx-border-width: 1px;
+}
+
+
+.toggle-button:selected {
+    -fx-background-color: lightgreen ;
+    -fx-border-color: green ;
+    -fx-border-width: 2px ;
+}
+
+
+.flat-button:selected {
+    -fx-background-color: lightgreen ;
+    -fx-border-color: green ;
+    -fx-border-width: 2px ;
+}
+
+
+/* Tło zawartości rozwiniętego TitledPane */
+.accordion .titled-pane > .content {
+    -fx-background-color: #1e1e1e; /* takie samo jak .dark-panel */
+    -fx-padding: 10px;
+    -fx-text-fill: white; /* tekst wewnątrz content - np. przyciski (jeśli dziedziczą) */
+}
+
+/* Usuń tło tytułu, aby był przezroczysty */
+.titled-pane {
+    -fx-background-color: transparent;
+}
+
+/* Styl nagłówka TitledPane (tekst i tło) */
+.titled-pane > .title {
+    -fx-background-color: transparent;
+    -fx-text-fill: white; /* tekst tytułu biały */
+}
+
+/* Kolor tekstu w samym tytule */
+.titled-pane > .title > .text {
+    -fx-fill: white;
+}
+
+/* Styl dla strzałki (ikonka rozwijania) */
+.titled-pane > .title > .arrow {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-shape: "M 0 0 L 8 8 L 16 0 Z"; /* trójkąt strzałki */
+    -fx-background-insets: 0;
+    -fx-padding: 0 5 0 0;
+    -fx-fill: #00ccff; /* jasnoniebieski kolor strzałki, możesz zmienić */
+}
+
+/* Alternatywnie, jeśli .arrow nie działa, można celować w grafiki w tytule */
+.titled-pane > .title > .arrow > * {
+    -fx-fill: #00ccff;
+}
+
+/* Ewentualnie, jeśli chcesz inny kolor przy najechaniu */
+.titled-pane > .title:hover > .arrow {
+    -fx-fill: #0099cc;
+}

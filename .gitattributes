@@ -1,0 +1,5 @@
+rpm/** linguist-detectable=false
+out/** linguist-detectable=false
+lib/** linguist-detectable=false
+target/** linguist-detectable=false
+src/main/resources/files/** linguist-detectable=false
