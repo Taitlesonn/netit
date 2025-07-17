@@ -69,7 +69,7 @@ Wywołanie: use.sh [ --clean ] [ --no-run ] [ --set-version <version>] [ --rpm ]
    --clean : czyści katalog wyjściowy
    --no-run : kompiluje projekt bez uruchamiania
    --set-version <version> : ustawia określoną wersje (dowolny string)
-   --rpm : buduje cały projekt i twirzy repozytorium rpm
+   --rpm : buduje cały projekt i tworzy repozytorium rpm
    --wininstaler : tworzy projekt na windows (domyślnie tworzy na linux)
    --help : wyświetlenie tego co teraz czytasz
  
@@ -81,6 +81,11 @@ Zmiennymi środowiskowymi można kontrolować:
 </pre>
 
  ## Pamiętaj by ustawić poprawną sicierzkę do JavyFX ! 
+ Lub urzyj gotowca zbudowanego do rpm lub linstalatora na windows (po instalcji wpisz w konsoli netit):
+ [Google Drive]( https://drive.google.com/drive/folders/17C-igY_6j2UcYgBPe5AKYI2uKE18AtZN?usp=drive_link)
+
+
+
 
 ---
  	🛈 Some of the icons used in this project were generated with the help of AI (ChatGPT by OpenAI). These icons were custom-made for this project and do not violate any license terms.
