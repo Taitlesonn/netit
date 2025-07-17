@@ -9,7 +9,7 @@ trap 'echo "❌ Wystąpił błąd w linii $LINENO. Skrypt przerwany." >&2' ERR
 #   --clean : czyści katalog wyjściowy
 #   --no-run : kompiluje projekt bez uruchamiania
 #   --set-version <version> : ustawia określoną wersje (dowolny string)
-#   --rpm : buduje cały projekt i twirzy repozytorium rpm
+#   --rpm : buduje cały projekt i tworzy repozytorium rpm
 #   --wininstaler : tworzy projekt na windows
 #   --help : wyświetlenie tego co teraz czytasz
 # 
@@ -62,7 +62,7 @@ Wywołanie: use.sh [ --clean ] [ --no-run ] [ --set-version <version>] [ --rpm ]
    --clean : czyści katalog wyjściowy
    --no-run : kompiluje projekt bez uruchamiania
    --set-version <version> : ustawia określoną wersje (dowolny string)
-   --rpm : buduje cały projekt i twirzy repozytorium rpm
+   --rpm : buduje cały projekt i tworzy repozytorium rpm
    --wininstaler : tworzy projekt na windows (domyślnie tworzy na linux)
    --help : wyświetlenie tego co teraz czytasz
  
